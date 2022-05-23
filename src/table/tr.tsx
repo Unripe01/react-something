@@ -2,14 +2,15 @@ import { Row } from "../data/data";
 
 const Component: React.FC<Row> = (props) => (
   <tr>
-    <th>{props.generation}</th>
+    <th>{props.age}</th>
     {props.answers.map(
       (
         answer,
         i // answer:number
-      ) => (
-        <td key={i}>{`${answer * 100}%`} </td>
-      )
+      ) => {
+        if(answer == null) return <td key={i}>{'-'}</td>
+        return <td key={i}>{`${(answer) * 100}%`} </td>
+      }
     )}
   </tr>
 );
