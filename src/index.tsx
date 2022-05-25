@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Table from './table/index'
 import Parent from './hooks/sample';
+import UseStateComponent from './hooks/useStateComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,8 @@ root.render(
     <Table />
     <hr />
     <Parent label='sample'></Parent>
+    <hr />
+    <UseStateComponent></UseStateComponent>
   </React.StrictMode>
 );
 
