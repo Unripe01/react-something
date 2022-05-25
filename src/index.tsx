@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Table from './table/index'
+import Parent from './hooks/sample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,6 +13,8 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <Table />
+    <hr />
+    <Parent label='sample'></Parent>
   </React.StrictMode>
 );
 
