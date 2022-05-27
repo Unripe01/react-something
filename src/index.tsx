@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Table from './table/index'
 import Parent from './hooks/sample';
-import UseStateComponent from './hooks/useStateComponent';
+import UseStateSample from './hooks/useStateSample';
+import UseMemoSample from './hooks/useMemoSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +18,9 @@ root.render(
     <hr />
     <Parent label='sample'></Parent>
     <hr />
-    <UseStateComponent></UseStateComponent>
+    <UseStateSample></UseStateSample>
+    <hr />
+    <UseMemoSample></UseMemoSample>
   </React.StrictMode>
 );
 

@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-const UseStateComponent: React.FC = () => {
+const UseStateSample: React.FC = () => {
   const [count, setCount] = useState<number | null>(0);
   const handleClick = useCallback(() => {
     setCount((count ?? 0) + 1);
@@ -14,4 +14,4 @@ const UseStateComponent: React.FC = () => {
   );
 };
 
-export default UseStateComponent;
+export default UseStateSample;
