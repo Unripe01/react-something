@@ -7,6 +7,7 @@ import Table from './table/index'
 import Parent from './hooks/sample';
 import UseStateSample from './hooks/useStateSample';
 import UseMemoSample from './hooks/useMemoSample';
+import UseCallbackSampleContainer from './hooks/useCallbackSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,6 +22,8 @@ root.render(
     <UseStateSample></UseStateSample>
     <hr />
     <UseMemoSample></UseMemoSample>
+    <hr />
+    <UseCallbackSampleContainer></UseCallbackSampleContainer>
   </React.StrictMode>
 );
 
