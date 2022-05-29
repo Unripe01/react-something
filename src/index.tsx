@@ -8,6 +8,7 @@ import Parent from './hooks/sample';
 import UseStateSample from './hooks/useStateSample';
 import UseMemoSample from './hooks/useMemoSample';
 import UseCallbackSampleContainer from './hooks/useCallbackSample';
+import UseEffectSample from './hooks/useEffectSamle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,6 +25,8 @@ root.render(
     <UseMemoSample></UseMemoSample>
     <hr />
     <UseCallbackSampleContainer></UseCallbackSampleContainer>
+    <hr />
+    <UseEffectSample></UseEffectSample>
   </React.StrictMode>
 );
 
