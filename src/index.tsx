@@ -10,6 +10,7 @@ import UseMemoSample from './hooks/useMemoSample';
 import UseCallbackSampleContainer from './hooks/useCallbackSample';
 import UseEffectSample from './hooks/useEffectSamle';
 import UseRefSample from './hooks/useRefSample';
+import UseReducerSample from './hooks/useReducerSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -31,6 +32,8 @@ root.render(
     <UseEffectSample></UseEffectSample>
     <h3>useRef</h3>
     <UseRefSample></UseRefSample>
+    <h3>useReducer</h3>
+    <UseReducerSample></UseReducerSample>
   </React.StrictMode>
 );
 
