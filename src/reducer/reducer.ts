@@ -1,24 +1,32 @@
-import { Actions } from "./newActions";
+import ActionTypes from "./actionTypes";
+import { CreatorsToActions } from "./creatorsToActions";
+import * as creators from "./actionCreators";
 
 type State = {
   count: number;
   unit: string;
 };
+type Actions = CreatorsToActions<typeof creators>;
 
-export const initialState: State = {
-  count: 0,
-  unit: "pt",
-};
+function initialState(injects?: Partial<State>): State {
+  return {
+    count: 0,
+    unit: "pt",
+    ...injects,
+  };
+}
 
-export function reducer(state: State, action: Actions): State {
+function reducer(state: State, action: Actions): State {
   switch (action.type) {
-    case "LONG_PREFIX_INCREMENT":
+    case ActionTypes.INCREMENT:
       return { ...state, count: state.count + 1 };
-    case "LONG_PREFIX_DECREMENT":
+    case ActionTypes.DECREMENT:
       return { ...state, count: state.count - 1 };
-    case "LONG_PREFIX_SET_COUNT":
+    case ActionTypes.SET_COUNT:
       return { ...state, count: action.payload.amount };
     default:
       throw new Error();
   }
 }
+
+export { reducer, initialState };
