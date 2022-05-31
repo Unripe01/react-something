@@ -10,7 +10,7 @@ const UseRefSample: React.FC = () => {
 
   return (
     <div>
-      <div ref={ref} style={{ width: 100, height: 100 }}></div>
+      <div ref={ref} style={{ width: 100, height: 100 }}>aa</div>
     </div>
   );
 };
