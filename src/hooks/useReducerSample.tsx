@@ -8,8 +8,8 @@ const UseReducerSample : React.FC = ()=> {
   return (
     <>
       Count: {state.count}
-      <button onClick={()=> dispatch({type:'increment'})}>+</button>
-      <button onClick={()=> dispatch({type:'decrement'})}>-</button>
+      <button onClick={()=> dispatch({type:'INCREMENT'})}>+</button>
+      <button onClick={()=> dispatch({type:'DECREMENT'})}>-</button>
     </>
   )
 }
